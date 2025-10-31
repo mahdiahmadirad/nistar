@@ -1,0 +1,68 @@
+title: "نیستار"
+name: "Nistar"
+description: "A Persian blog on system design, cognitive architecture, and complex thinking."
+url: "https://mahdiahmadirad.github.io/nistar"
+baseurl: ""
+locale: fa
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: sunrise
+rtl: true
+
+paginate: 5
+paginate_path: "/page:num/"
+
+timezone: Asia/Tehran
+
+author:
+  name: "مهدی"
+  bio: "Cognitive architectures, systems, and thoughtful engineering."
+  location: "Iran"
+  linkedin: ""
+  github: ""
+
+# Comments and analytics disabled by default
+comments: false
+analytics:
+  provider: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+sass:
+  style: compressed
+
+collections:
+  posts:
+    output: true
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+permalink: /:categories/:title/
+
+footer:
+  links: []

@@ -1,0 +1,14 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.page__content {
+  text-align: right;
+}
+
+.sidebar,
+.page__meta {
+  direction: rtl;
+  text-align: right;
+}
